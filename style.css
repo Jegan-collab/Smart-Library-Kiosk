@@ -1,0 +1,268 @@
+
+/* Basic Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6fb;
+    color: #20243a;
+}
+
+/* Navigation Bar */
+header {
+    background: #151b35;
+    color: white;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a78bfa;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #202b55, #6546b8);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #e0dcf5;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.search-box input {
+    width: 75%;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+.search-box button {
+    padding: 16px 25px;
+    background: #a78bfa;
+    color: #151b35;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #c4b5fd;
+}
+
+/* Books Section */
+.books {
+    padding: 55px 7%;
+}
+
+.books h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+#bookList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* Book Cards */
+.book-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    border: 1px solid #e8eaf2;
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(50,40,100,0.12);
+}
+
+.book-card h3 {
+    color: #6546b8;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.book-card p {
+    color: #62677a;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background: #151b35;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 8px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input,
+    .search-box button {
+        width: 100%;
+    }
+}
+
+
+/* Statistics Dashboard */
+
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 35px 7%;
+    background: #f4f6fb;
+}
+
+.stat-card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    border-bottom: 4px solid #6546b8;
+}
+
+.stat-card h2 {
+    color: #6546b8;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    color: #555;
+    font-size: 15px;
+}
+
+@media (max-width: 600px) {
+    .statistics {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Admin Dashboard Design */
+
+.admin-section {
+    background: white;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+.admin-section h2 {
+    color: #6546b8;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.admin-section h3 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+#addBookForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#addBookForm input {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+#addBookForm input:focus {
+    border-color: #6546b8;
+}
+
+#addBookForm button {
+    padding: 14px;
+    background: #6546b8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#addBookForm button:hover {
+    background: #49329b;
+}
+
+@media (max-width: 600px) {
+    .admin-section {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+}

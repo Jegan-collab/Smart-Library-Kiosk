@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Library Kiosk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>📚 Smart Library Kiosk</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Search Books</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Smart Library</h1>
+        <p>Discover, Search and Explore Your Books</p>
+
+        <div class="search-box">
+            <input type="text" id="searchInput"
+                placeholder="Search your favourite book...">
+            <button onclick="searchBook()">Search</button>
+        </div>
+    </section>
+
+    
+
+<!-- Library Statistics -->
+
+<section class="statistics">
+
+    <div class="stat-card">
+        <h2>3</h2>
+        <p>Total Books</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>3</h2>
+        <p>Available Books</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>0</h2>
+        <p>Borrowed Books</p>
+    </div>
+
+</section>
+
+<!-- Admin Add Book Section -->
+
+<section class="admin-section">
+
+    <h2>Admin Dashboard</h2>
+    <h3>Add New Book</h3>
+
+    <form id="addBookForm">
+
+        <input
+            type="text"
+            id="bookName"
+            placeholder="Enter Book Name"
+            required
+        >
+
+        <input
+            type="text"
+            id="authorName"
+            placeholder="Enter Author Name"
+            required
+        >
+
+        <input
+            type="text"
+            id="isbn"
+            placeholder="Enter ISBN Number"
+            required
+        >
+
+        <input
+            type="text"
+            id="rackNumber"
+            placeholder="Enter Rack Number"
+            required
+        >
+
+        <button type="submit">Add Book</button>
+
+    </form>
+
+</section>
+
+<section class="books">
+    <h2>Explore Our Library</h2>
+
+    <div id="bookList">
+
+        <div class="book-card">
+            <h3>Java Programming</h3>
+            <p>Book ID: BK101</p>
+            <p>Author: Herbert Schildt</p>
+            <p>ISBN: 9780071808552</p>
+            <p>Rack Number: A1</p>
+            <p>Availability: Available</p>
+        </div>
+
+        <div class="book-card">
+            <h3>Database Systems</h3>
+            <p>Book ID: BK102</p>
+            <p>Author: Abraham Silberschatz</p>
+            <p>ISBN: 9780078022159</p>
+            <p>Rack Number: B2</p>
+            <p>Availability: Available</p>
+        </div>
+
+        <div class="book-card">
+            <h3>Python Programming</h3>
+            <p>Book ID: BK103</p>
+            <p>Author: Eric Matthes</p>
+            <p>ISBN: 9781718502703</p>
+            <p>Rack Number: C3</p>
+            <p>Availability: Available</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+    <footer>
+        <p>Smart Library Management System | 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
